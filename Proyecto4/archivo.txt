@@ -1,0 +1,11 @@
+Este proyecto se basa en juntar un backend y un frontend de dos videos de YouTube, con el fin de entender mejor la comunicación entre el backend y el frontend, partimos juntando la carpeta del proyecto 2 y el frontend del video. 
+
+
+Backend:
+- https://www.youtube.com/watch?v=9BD9eK9VqXA 
+- https://github.com/jamezmca/backend-full-course 
+
+
+Frontend:
+- https://github.com/jamezmca/reactjs-full-course/tree/main/todo-app
+- https://www.youtube.com/watch?v=iKpkVKubvKk 
