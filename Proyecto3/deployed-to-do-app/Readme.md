@@ -7,40 +7,45 @@ Una aplicación web de tareas (To-Do) construida con **React**, **Node.js** y **
 - Almacenar datos en una base de datos PostgreSQL local.
 
 Desarrollamos este proyecto siguiendo el siguiente video: https://www.youtube.com/watch?v=LYEkguL9PcY 
+
 ---
 
 ## 🚀 Cómo correr el proyecto
 
 ### 1. Clona este repositorio
 
-### 2. Instala dependencias
+### 2. Configura la base de datos
 
-#### En el directorio raíz (servidor):
+Sigue la sección 📦 Configuración de la base de datos más abajo para asegurarte de que PostgreSQL esté instalado, funcionando y con las tablas necesarias.
+
+#### 3. Configura variables de entorno
+
+En el archivo:
 ```bash
-cd server
-npm install
+Proyecto3/deployed-to-do-app/server/.env
 ```
 
-#### En el cliente (frontend):
+Reemplaza las variables con un usuario válido en máquina:
+
+```bash
+USERNAME=tu_usuario_local
+PASSWORD=tu_contraseña (puede estar vacía si no tiene)
+```
+
+### 3. Instala dependencias y corre el backend
+
+```bash
+cd Proyecto3/deployed-to-do-app/server
+npm install     # Instala las dependencias del backend
+npm run start   # Inicia el servidor en http://localhost:8000
+```
+
+### 4. Instala dependencias y corre el frontend
+
 ```bash
 cd ../client
-npm install
-```
-
-### 3. Configura la base de datos
-
-### 4. Corre el servidor backend
-
-```bash
-cd ../server
-npm run start
-```
-
-### 5. Corre la app frontend
-
-```bash
-cd ../client
-npm run start
+npm install     # Instala las dependencias del frontend
+npm run start   # Inicia la app React en http://localhost:3000
 ```
 
 Esto corre el frontend en http://localhost:3000
