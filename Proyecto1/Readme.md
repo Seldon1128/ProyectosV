@@ -15,7 +15,7 @@ Este proyecto fue desarrollado como práctica personal siguiendo un tutorial de 
 - Node.js versión 22 o superior
 -  REST Client si deseas probar los endpoints con el archivo todo-app.rest
 
---
+---
 
 # 🚀 ¿Cómo correr el proyecto?
 
