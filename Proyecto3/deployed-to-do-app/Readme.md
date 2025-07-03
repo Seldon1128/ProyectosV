@@ -10,6 +10,12 @@ Desarrollamos este proyecto siguiendo el siguiente video: https://www.youtube.co
 
 ---
 
+## 🧰 Requisitos Previos:
+- Node.js versión 22 o superior
+- PostgreSQL
+
+---
+
 ## 🚀 Cómo correr el proyecto
 
 ### 1. Clona este repositorio
