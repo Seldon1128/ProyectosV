@@ -1,6 +1,6 @@
 # 📝 Todo App - Fullstack con Docker, Prisma, Express y React
 
-Este proyecto es una aplicación **Fullstack** que permite registrar usuarios, iniciar sesión, y gestionar tareas (crear, completar y eliminar).  
+Este proyecto es una aplicación **Fullstack** que permite registrar usuarios, iniciar sesión, y gestionar tareas (crear, completar y eliminar).  <br>
 Fue creado con el objetivo de **aprender y entender mejor la comunicación entre frontend y backend**, combinando y adaptando **dos tutoriales de YouTube**.
 
 ---
@@ -16,7 +16,6 @@ Fue creado con el objetivo de **aprender y entender mejor la comunicación entre
 ## 🛠 Tecnologías utilizadas
 
 - React (Vite)
-- Express.js
 - Node.js
 - Prisma ORM
 - PostgreSQL
@@ -30,8 +29,8 @@ Fue creado con el objetivo de **aprender y entender mejor la comunicación entre
 Antes de ejecutar este proyecto, asegúrate de tener instalado lo siguiente en tu equipo:
 
 - [Node.js](https://nodejs.org/) (v18 o superior recomendado)
-- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
 - [Docker](https://www.docker.com/products/docker-desktop/)
+- Conexión a internet — requerida para descargar dependencias y generar el cliente Prisma
 - (Opcional) [PostgreSQL CLI](https://www.postgresql.org/download/) para interactuar con la base de datos manualmente
 
 ---
@@ -73,34 +72,41 @@ Archivos importantes:
 - docker-compose.yaml
 - schema.prisma
 
+✅ Recomendado: Ejecuta estos pasos desde la terminal integrada en Docker Desktop o desde una terminal con Docker correctamente instalado y configurado en tu sistema.
+
 ⚙️ Pasos para ejecutarlo:
 
-1. Genera el cliente de Prisma
+1. Entra al directorio del backend
+```
+cd Proyecto4/server
+```
+
+2. Genera el cliente de Prisma
 ```
 npx prisma generate
 ```
 
-2. Construye las imágenes de Docker
+3. Construye las imágenes de Docker
 ```
 docker compose build
 ```
 
-3. Crea y aplica las migraciones de la base de datos
+4. Crea y aplica las migraciones de la base de datos
 ```
 docker compose run app npx prisma migrate dev --name init
 ```
 
-4. Levanta los contenedores (solo si ya están construidos)
+5. Levanta los contenedores (solo si ya están construidos)
 ```
 docker compose up
 ```
 
-5. Ingresa a la base de datos PostgreSQL desde Docker (nueva terminal):
+6. (Opcional)  Ingresa a la base de datos PostgreSQL desde Docker (nueva terminal):
 ```
 docker exec -it postgres-db4 psql -U postgres -d todoapp4
 ```
 
-6. Detén los contenedores
+7. Detén los contenedores
 ```
 docker compose down
 ```
