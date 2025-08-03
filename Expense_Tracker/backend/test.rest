@@ -1,0 +1,7 @@
+### Request de prueba para endpoint POST /prueba
+POST http://localhost:5010/prueba
+Content-Type: application/json
+
+{
+  "mensaje": "Hola servidor"
+}
